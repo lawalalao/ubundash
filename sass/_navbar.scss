@@ -1,0 +1,70 @@
+// ----------------------------------------
+//     Navigation
+// ----------------------------------------
+
+.nav {
+    height: 15rem;
+
+    &__wrap {
+        height: 15rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 4rem 9rem;
+        background-color: $color-white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    &__logo {
+        transform: translateY(35%);
+
+        img {
+            width: 222px;
+            height: 146px;
+            object-fit: contain;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+        margin-right: 16rem;
+
+
+        &--img {
+            overflow: hidden;
+
+            img {
+                width: 7.2rem;
+                height: 7.2rem;
+                border-radius: 50%;
+            }
+
+        }
+
+        &--text {
+            margin-left: 3rem;
+
+            h1 {
+                font-size: 2.6rem;
+                font-family: $font-helvetica-bold;
+            }
+
+            p {
+                font-size: 1.8rem;
+                margin-top: .8rem;
+                font-family: $font-helvetica-normal;
+            }
+        }
+    }
+
+}

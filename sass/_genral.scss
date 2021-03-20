@@ -1,0 +1,66 @@
+
+// ----------------------------------------
+//     Genral Styling
+// ----------------------------------------
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: $color-text;
+    font-family: $font-gilroy-regular;
+}
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    transition: scroll-behavior 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color-text;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-gilroy-bold;
+    color: $color-text;
+} 
+
+img{
+    width: 100%;
+    object-fit: contain;
+}
+

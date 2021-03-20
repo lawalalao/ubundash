@@ -1,0 +1,103 @@
+// ----------------------------------------
+//     Break Points For Media Queries
+// ----------------------------------------
+$bp-2500: 156.25em;
+$bp-2450: 153.125em;
+$bp-2400: 150em;
+$bp-2350: 146.875em;
+$bp-2300: 143.75em;
+$bp-2250: 140.625em;
+$bp-2200: 137.5em;
+$bp-2150: 134.375em;
+$bp-2100: 131.25em;
+$bp-2050: 128.125em;
+$bp-2000: 125em;
+$bp-1950: 121.875em;
+$bp-1900: 118.75em;
+$bp-1850: 115.625em;
+$bp-1800: 112.5em;
+$bp-1750: 109.375em;
+$bp-1700: 106.25em;
+$bp-1650: 103.125em;
+$bp-1600: 100em;
+$bp-1550: 96.875em;
+$bp-1500: 93.25em;
+$bp-1450: 90.625em;
+$desktop: 1440px;
+$bp-1400: 87.5em;
+$bp-1350: 84.375em;
+$bp-1300: 81.25em;
+$bp-1250: 78.125;
+$bp-1200: 75em;
+$bp-1150: 71.875em;
+$bp-1100: 68.75em;
+$bp-1050: 65.625em;
+$laptop: 1024px;
+$bp-1000: 62.5em;
+$bp-950: 59.375em;
+$bp-900: 56.25em;
+$bp-850: 53.125em;
+$bp-800: 50em;
+$tablet: 768px;
+$bp-750: 46.875em;
+$bp-700: 43.75em;
+$bp-650: 40.625em;
+$bp-600: 37.5em;
+$bp-550: 34.375em;
+$bp-500: 31.25em;
+$bp-450: 28.125em;
+$mobile: 425px;
+$bp-400: 25em;
+$bp-350: 21.875em;
+$bp-300: 18.75em;
+
+
+// ----------------------------------------
+//      Import Fonts
+// ----------------------------------------
+
+@import url('../fonts/gilroy/style.css');
+
+@font-face{
+    font-family: "Helvetica-normal";
+    src: url("../fonts/Helvetica-Font/Helvetica-normal.ttf");
+}
+
+@font-face{
+    font-family: "Helvetica-light";
+    src: url("../fonts/Helvetica-Font/helvetica-light.ttf");
+}
+
+@font-face{
+    font-family: "Helvetica-bold";
+    src: url("../fonts/Helvetica-Font/Helvetica-Bold.ttf");
+}
+
+
+// ----------------------------------------
+//     Font Family
+// ----------------------------------------
+
+$font-helvetica-normal: Helvetica-normal;
+$font-helvetica-bold: Helvetica-bold;
+$font-helvetica-light: Helvetica-light;
+$font-gilroy-bold: Gilroy-Bold;
+$font-gilroy-regular: Gilroy-Regular;
+$font-gilroy-medium: Gilroy-Medium;
+$font-gilroy-light: Gilroy-Light;
+
+
+
+
+
+// Colors: 
+
+$color-blue: #4DA8DA;
+$color-light-1: #EEFBFB;
+$color-text: #707070;
+$color-white: #fff;
+$color-black: #000;
+$color-yellow: #F89C1E;
+$color-dark-blue: #262262;
+
+

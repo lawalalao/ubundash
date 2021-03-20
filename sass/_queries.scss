@@ -1,0 +1,348 @@
+// ----------------------------------------
+//     Desktop
+// ----------------------------------------
+
+@media only screen and (max-width: $desktop) {
+    .container {
+        grid-template-columns: 30rem 1fr;
+    }
+
+    .sidebar__wrap {
+        max-width: 30rem;
+        padding-left: 4.5rem;
+        height: 65rem;
+    }
+
+    .sidebar__heading {
+        margin-top: 8rem;
+    }
+
+    .nav__wrap {
+        padding: 3rem 4rem;
+    }
+
+    .nav__logo {
+
+        img {
+            width: 18rem;
+            height: 10rem;
+            object-fit: contain;
+        }
+    }
+
+    .nav__profile {
+        margin-right: 8rem;
+    }
+
+    .main__devis,
+    .main__gallery,
+    .main__prog {
+        padding: 2.5rem 4rem;
+    }
+
+
+
+}
+
+@media only screen and (max-width: $bp-1300) {
+    html {
+        font-size: 50.5%;
+    }
+}
+
+// ----------------------------------------
+//     LAPTOP
+// ----------------------------------------
+@media only screen and (max-width: $laptop) {
+
+    .nav__menu {
+        img {
+            height: 6rem;
+        }
+    }
+
+    .main__prog--box {
+        height: 20rem;
+
+        p {
+            font-size: 2rem;
+        }
+    }
+
+    .main__devis {
+
+        &--box {
+            height: 27rem;
+
+            h1 {
+                font-size: 5rem;
+            }
+
+            button {
+                width: 30rem;
+                font-size: 2.2rem;
+            }
+        }
+    }
+
+}
+
+
+// ----------------------------------------
+//     TABLET
+// ----------------------------------------
+
+@media only screen and (max-width: $tablet) {
+
+    .container {
+        grid-template-columns: 5rem 1fr;
+        grid-gap: 1.5rem;
+    }
+
+    .nav {
+        height: 10rem;
+
+        &__wrap {
+            height: 10rem;
+            padding: 1.5rem 4rem;
+        }
+
+        &__logo {
+            transform: none;
+
+            img {
+                width: 10rem;
+                height: auto;
+            }
+        }
+
+        &__profile {
+            margin-right: 4rem;
+
+            &--img {
+
+                img {
+                    width: 6rem;
+                    height: 6rem;
+                }
+            }
+        }
+    }
+
+
+    .sidebar {
+        width: 5rem;
+
+        &__wrap {
+            max-width: 5rem;
+            top: 10rem;
+            height: 100vh;
+            transition: max-width .5s cubic-bezier(0.47, 0, 0.745, 1);
+        }
+
+        &__wrap.active {
+            max-width: 35rem;
+
+            .sidebar__heading,
+            .sidebar__list {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+                height: auto;
+            }
+        }
+
+
+        &__list,
+        &__heading {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(15rem);
+            transition: all .3s cubic-bezier(0.6, 0.04, 0.78, 1);
+            transition-delay: .2s;
+            height: 0;
+            overflow: hidden;
+        }
+
+        &__toggle {
+            position: fixed;
+            top: 50%;
+            left: 3rem;
+            width: 3rem;
+            height: 6rem;
+            z-index: 1000;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            font-size: 3rem;
+            @include flex-col-center;
+            transition: left .5s cubic-bezier(0.47, 0, 0.745, 1);
+
+
+            svg {
+                width: 3rem;
+                height: 3rem;
+                fill: $color-yellow;
+                animation: blink 1s cubic-bezier(0.47, 0, 0.745, 1);
+                animation-iteration-count: infinite;
+                transition: all .5s;
+            }
+        }
+
+        &__toggle.active {
+            left: 32rem;
+
+
+            svg {
+                transform: rotate(180deg);
+                animation: none;
+                transition: all .3s;
+            }
+        }
+    }
+
+
+    .back-dot {
+
+        img {
+            height: 35rem;
+        }
+    }
+
+    .offset-top {
+        margin-top: 40rem;
+    }
+}
+
+@keyframes blink {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+@media only screen and (max-width: $bp-600) {
+
+    .container {
+        grid-gap: 0;
+    }
+
+    .nav {
+        height: 7rem;
+
+        &__wrap {
+            height: 7rem;
+            padding: 1.5rem 2rem;
+        }
+
+        &__logo {
+            transform: none;
+
+            img {
+                width: 7rem;
+                height: auto;
+            }
+        }
+
+        &__profile {
+            margin-right: 2rem;
+
+            &--img {
+
+                img {
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+
+            &--text {
+                margin-left: 1.4rem;
+
+                h1 {
+                    font-size: 1.8rem;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    margin-top: .4rem;
+                }
+            }
+
+        }
+
+        &__menu {
+
+            img {
+                height: 4rem;
+            }
+        }
+    }
+
+    .sidebar {
+
+        &__wrap {
+            top: 7rem;
+        }
+    }
+
+    .main__devis,
+    .main__gallery,
+    .main__prog {
+        padding: 2.5rem 2rem;
+    }
+
+    .main__gallery {
+        margin-bottom: 2rem;
+    }
+
+
+
+    .main__devis {
+
+        &--box {
+            height: 24rem;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        button {
+            width: 20rem;
+            height: 6rem;
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+    }
+}
+
+// ----------------------------------------
+//     MOBILE
+// ----------------------------------------
+
+@media only screen and (max-width: $mobile) {
+
+    .main {
+
+        &__prog {
+
+            &--content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &__gallery--box {
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+        }
+    }
+
+}
